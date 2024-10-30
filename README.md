@@ -17,7 +17,7 @@ This repository contains examples of Contentful request verification in multiple
 
 ## How Request Verification Works
 
-Contentful request verification is based on calculating a signature using HMAC-SHA256. The signature is calculated from a "canonical string" formed from the HTTP request's method, path, headers, and body. The server then compares the generated signature with the signature sent in the webhook headers.
+Contentful request verification is based on calculating a signature using HMAC-SHA256. The signature is calculated from a "canonical string" formed from the HTTP request's method, path, headers, and body. The server then compares the generated signature with the signature sent in the webhook/app event/app action headers. Visit the Contentful documentation portal to learn more about [request verification for webhooks](https://www.contentful.com/developers/docs/webhooks/request-verification/) and [request verification for app events and app actions](https://www.contentful.com/developers/docs/extensibility/app-framework/request-verification/).
 
 ### General Steps:
 
