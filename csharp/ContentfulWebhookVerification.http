@@ -1,0 +1,6 @@
+@ContentfulWebhookVerification_HostAddress = http://localhost:8080
+
+POST {{ContentfulWebhookVerification_HostAddress}}/
+Accept: application/json
+
+###
