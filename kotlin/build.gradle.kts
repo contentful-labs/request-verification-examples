@@ -16,7 +16,7 @@ dependencies {
     implementation("io.ktor:ktor-server-netty:2.0.0")
     implementation("io.ktor:ktor-server-core:2.0.0")
     implementation("io.ktor:ktor-server-host-common:2.0.0")
-    implementation("io.ktor:ktor-server-call-logging:2.0.0")
+    implementation("io.ktor:ktor-server-call-logging:3.0.3")
     implementation("io.ktor:ktor-server-content-negotiation:2.0.0")
     implementation("io.ktor:ktor-serialization-kotlinx-json:2.0.0")
 
