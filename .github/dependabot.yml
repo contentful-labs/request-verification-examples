@@ -7,7 +7,7 @@ updates:
       interval: "weekly"
 
   # Elixir
-  - package-ecosystem: "hex"
+  - package-ecosystem: "mix"
     directory: "/elixir"
     schedule:
       interval: "weekly"
