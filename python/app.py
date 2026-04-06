@@ -35,7 +35,7 @@ def build_canonical_string(method, path, headers, signed_headers, body):
     """
     Constructs the canonical string by concatenating HTTP method, path, headers, and body.
     """
-    sorted_headers = [f"{header.lower().strip()}:{headers.get(header.strip())}" for header in signed_headers if header.strip().lower() in headers]
+    sorted_headers = [f"{header.strip().lower()}:{headers.get(header.strip().lower())}" for header in signed_headers if header.strip().lower() in headers]
     headers_string = ';'.join(sorted_headers)
     canonical_string = f"{method}\n{path}\n{headers_string}\n{body}"
     return canonical_string
@@ -54,7 +54,7 @@ def webhook():
     """
     method = request.method
     path = request.path
-    headers = {k.lower(): v for k, v in request.headers.items()}
+    headers = {k.strip().lower(): v for k, v in request.headers.items()}
     body = request.get_data(as_text=True)
 
     # Verify request signature
